@@ -27,8 +27,8 @@ z-index:3;
 cursor: pointer;
 
 &:hover{
-    background-color: rgba(0,255,0,0.4);
-    box-shadow: 0 0 8px 6px rgba(0,255,0,0.2);
+    background-color: white;
+    box-shadow: 0 0 8px 6px #3B3850;
 }
 
 &>*:first-child{
@@ -40,9 +40,9 @@ cursor: pointer;
 const PowerButton = () => {
     return (
         <Power>
-        <NavLink to="/">
-        <PowerBtn width={30} height={30} fill='currentColor' />
-        </NavLink>
+            <NavLink to="/">
+                <PowerBtn width={30} height={30} fill='currentColor' />
+            </NavLink>
         </Power>
     )
 }

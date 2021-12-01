@@ -2,16 +2,28 @@ import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
-import LogoComponent from '../subComponents/LogoComponent'
+// import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
-;
+    ;
+
+// import img1 from './appointment-modal.PNG'
+// import img2 from './salon-loginPNG.PNG'
+// import img3 from './salon-apponitment.PNG'
 
 
+
+import bg from './welcomeBg.jpg'
+
+
+
+
+import Footer from './Footer'
+import HomePortfolio from './HomePortfolio'
 const MainContainer = styled.div`
-background: ${props => props.theme.body};
+// background: ${props => props.theme.body};
 width: 100vw;
 height: 100vh;
 overflow:hidden;
@@ -89,8 +101,8 @@ to{
 
 const Center = styled.button`
 position: absolute;
-top: ${props => props.click ? '85%' :'50%'  };
-left: ${props => props.click ? '92%' :'50%'  };
+top: ${props => props.click ? '85%' : '50%'};
+left: ${props => props.click ? '92%' : '50%'};
 transform: translate(-50%,-50%);
 border: none;
 outline: none;
@@ -108,7 +120,7 @@ transition: all 1s ease;
 }
 
 &>:last-child{
-    display: ${props => props.click ? 'none' :'inline-block'  };
+    display: ${props => props.click ? 'none' : 'inline-block'};
     padding-top: 1rem;
 }
 `
@@ -126,6 +138,8 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 `
 
 
+
+
 const Main = () => {
 
     const [click, setClick] = useState(false);
@@ -133,106 +147,151 @@ const Main = () => {
     const handleClick = () => setClick(!click);
 
     return (
-        <MainContainer>
-         <DarkDiv   click={click}/>
-            <Container>
-            <PowerButton />
-            <LogoComponent theme={click ? 'dark' :'light'}/>
-            <SocialIcons theme={click ? 'dark' :'light'} />
-           
-            <Center click={click}>
-                <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span>click here</span>
-            </Center>
+        <>
 
-            <Contact target="_blank" to={{pathname:"mailto:codebucks27@gmail.com"}}>
-                <motion.h2
-                initial={{
-                    y:-200,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                animate={{
-                    y:0,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                
-                >
-                    Say hi..
-                </motion.h2>
-            </Contact>
-            <BLOG to="/blog">
-                <motion.h2
-                initial={{
-                    y:-200,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                animate={{
-                    y:0,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                >
-                    Blog
-                </motion.h2>
-            </BLOG>
-            <WORK to="/work" click={+click}>
-                <motion.h2
-                initial={{
-                    y:-200,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                animate={{
-                    y:0,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                 whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                >
-                    Work
-                </motion.h2>
-            </WORK>
-            <BottomBar>
-            <ABOUT to="/about" click={+click}>
-                <motion.h2
-                initial={{
-                    y:200,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                animate={{
-                    y:0,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                 whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                >
-                    About.
-                </motion.h2>
-            </ABOUT>
-            <SKILLS to="/skills">
-                <motion.h2
-                initial={{
-                    y:200,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                animate={{
-                    y:0,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                 whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                >
-                    My Skills.
-                </motion.h2>
-            </SKILLS>
+            <MainContainer
 
-            </BottomBar>
+                className="img-fluid"
 
-            </Container>
-            {click ? <Intro click={click} /> : null }
-        </MainContainer>
+                style={{
+                    backgroundImage:
+                        `url(${bg})`, backgroundRepeat: 'no-repeat', backgroundSize: '90%', paddingBottom: '28px',
+                    paddingBottom: '10%',
+                    backgroundColor: 'rgba(40, 38, 65, 0.9)',
+
+                    backgroundBlendMode: 'darken,luminosity',
+                }}
+            >
+
+
+                <DarkDiv click={click} />
+                <Container>
+
+
+                    <PowerButton />
+                    {/* <LogoComponent theme={click ? 'dark' : 'light'} /> */}
+                    {/* boxShadow: '2px 2px 7px 14px black', */}
+                    <SocialIcons theme={click ? 'dark' : 'light'} />
+
+
+                    <Center click={click}>
+                        <YinYang
+                            style={{ color: 'white', marginTop: '40%' }}
+                            onClick={() => handleClick()} width={click ? 80 : 200} height={click ? 80 : 200} fill='currentColor' />
+                        <span style={{ color: 'white', fontSize: '20px' }}>click here</span>
+                    </Center>
+
+
+
+
+
+                    <Contact target="_blank" to={{ pathname: "mailto:mabiamownita@gmail.com" }}>
+                        <motion.h2
+                            style={{ color: 'white' }}
+                            initial={{
+                                y: -200,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            animate={{
+                                y: 0,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+
+                        >
+                            Contact Me..
+                        </motion.h2>
+                    </Contact>
+
+
+                    <BLOG to="/blog">
+                        <motion.h2
+                            style={{ color: 'white' }}
+                            initial={{
+                                y: -200,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            animate={{
+                                y: 0,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            Blog
+                        </motion.h2>
+                    </BLOG>
+                    <WORK to="/work" click={+click}>
+                        <motion.h2
+                            style={{ color: 'white' }}
+                            initial={{
+                                y: -200,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            animate={{
+                                y: 0,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            Work
+                        </motion.h2>
+                    </WORK>
+                    <BottomBar>
+                        <ABOUT to="/about" click={+click}>
+                            <motion.h2
+                                style={{ color: 'white' }}
+                                initial={{
+                                    y: 200,
+                                    transition: { type: 'spring', duration: 1.5, delay: 1 }
+                                }}
+                                animate={{
+                                    y: 0,
+                                    transition: { type: 'spring', duration: 1.5, delay: 1 }
+                                }}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                About.
+                            </motion.h2>
+                        </ABOUT>
+                        <SKILLS to="/skills">
+                            <motion.h2
+                                style={{ color: 'white' }}
+                                initial={{
+                                    y: 200,
+                                    transition: { type: 'spring', duration: 1.5, delay: 1 }
+                                }}
+                                animate={{
+                                    y: 0,
+                                    transition: { type: 'spring', duration: 1.5, delay: 1 }
+                                }}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                My Skills.
+                            </motion.h2>
+                        </SKILLS>
+
+                    </BottomBar>
+
+                    <a
+
+                        style={{ textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double' }}
+
+                        target="blank" href="https://drive.google.com/file/d/1Vgik3yvYb6dbEhLYIxDl8AU2YxGzm6X3/view?fbclid=IwAR0uTayss08i4qHEV8h8RWh9FAOLS34GBMT0GhUN2C4efbYbNNDe1cZ2dNk">
+                        <i style={{ marginRight: '0.5%' }} className="fas fa-download"></i>
+                        Get Resume
+                    </a>
+
+                </Container>
+                {click ? <Intro click={click} /> : null}
+            </MainContainer >
+            <HomePortfolio></HomePortfolio>
+            <Footer></Footer>
+        </>
     )
 }
 
