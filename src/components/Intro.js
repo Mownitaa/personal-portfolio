@@ -90,7 +90,7 @@ const Intro = () => {
                         <h6>Hi,</h6>
                         <h4>I'm Mabia Zaman Mownita.</h4>
                         <h6>Junior MERN Stack Developer</h6>
-                        <button style={{ color: 'black' }}>Download Resume</button>
+                        <button style={{ color: 'black' }}>Download Resume <i style={{ marginLeft: '0.5%' }} className="fas fa-download"></i></button>
                     </Text>
                 </SubBox>
                 <SubBox>

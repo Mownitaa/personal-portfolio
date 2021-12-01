@@ -2,8 +2,6 @@ import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import { DarkTheme } from './Themes';
 
-
-// import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
@@ -63,8 +61,10 @@ const AboutPage = () => {
         <ThemeProvider theme={DarkTheme}>
             <Box>
 
-                {/* <LogoComponent theme='dark' /> */}
-                <SocialIcons theme='light' />
+
+                <h1 style={{ color: 'white' }}>This is About Section</h1>
+                <PowerButton></PowerButton>
+                {/* <SocialIcons theme='light' />
                 <PowerButton />
                 <ParticleComponent theme='dark' />
 
@@ -80,7 +80,7 @@ const AboutPage = () => {
                 </Main>
 
                 <BigTitle text="ABOUT" top="10%" left="5%" />
-
+ */}
 
             </Box>
 

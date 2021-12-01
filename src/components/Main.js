@@ -40,7 +40,7 @@ const Container = styled.div`
 padding: 2rem;
 `
 
-const Contact = styled(NavLink)`
+const WORK = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
 top: 2rem;
@@ -57,7 +57,7 @@ transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index:1;
 `
-const WORK = styled(NavLink)`
+const Contact = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 
 position: absolute;
@@ -182,6 +182,77 @@ const Main = () => {
                     </Center>
 
 
+                    <a
+
+                        style={{ marginTop: '2%', textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double', display: 'flex', justifyContent: 'right', alignItems: 'center' }}
+
+                        target="blank" href="https://drive.google.com/file/d/1Vgik3yvYb6dbEhLYIxDl8AU2YxGzm6X3/view?fbclid=IwAR0uTayss08i4qHEV8h8RWh9FAOLS34GBMT0GhUN2C4efbYbNNDe1cZ2dNk">
+                        <i style={{ marginRight: '0.5%' }} className="fas fa-download"></i>
+                        Get Resume
+                    </a>
+
+
+                    {/* <Contact target="_blank" to={{ pathname: "mailto:mabiamownita@gmail.com" }}>
+                        <motion.h2
+                            style={{ color: 'white' }}
+                            initial={{
+                                y: -200,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            animate={{
+                                y: 0,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+
+                        >
+                            Contact Me..
+                        </motion.h2>
+                    </Contact> */}
+
+
+
+
+
+
+                    {/* <BLOG to="/blog">
+                        <motion.h2
+                            style={{ color: 'white' }}
+                            initial={{
+                                y: -200,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            animate={{
+                                y: 0,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            Blog
+                        </motion.h2>
+                    </BLOG> */}
+
+
+
+                    <WORK to="/work" click={+click}>
+                        <motion.h2
+                            style={{ color: 'white' }}
+                            initial={{
+                                y: -200,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            animate={{
+                                y: 0,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+
+                        </motion.h2>
+                    </WORK>
 
 
 
@@ -205,40 +276,7 @@ const Main = () => {
                     </Contact>
 
 
-                    <BLOG to="/blog">
-                        <motion.h2
-                            style={{ color: 'white' }}
-                            initial={{
-                                y: -200,
-                                transition: { type: 'spring', duration: 1.5, delay: 1 }
-                            }}
-                            animate={{
-                                y: 0,
-                                transition: { type: 'spring', duration: 1.5, delay: 1 }
-                            }}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                        >
-                            Blog
-                        </motion.h2>
-                    </BLOG>
-                    <WORK to="/work" click={+click}>
-                        <motion.h2
-                            style={{ color: 'white' }}
-                            initial={{
-                                y: -200,
-                                transition: { type: 'spring', duration: 1.5, delay: 1 }
-                            }}
-                            animate={{
-                                y: 0,
-                                transition: { type: 'spring', duration: 1.5, delay: 1 }
-                            }}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                        >
-                            Work
-                        </motion.h2>
-                    </WORK>
+
                     <BottomBar>
                         <ABOUT to="/about" click={+click}>
                             <motion.h2
@@ -277,14 +315,14 @@ const Main = () => {
 
                     </BottomBar>
 
-                    <a
+                    {/* <a
 
                         style={{ textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double' }}
 
                         target="blank" href="https://drive.google.com/file/d/1Vgik3yvYb6dbEhLYIxDl8AU2YxGzm6X3/view?fbclid=IwAR0uTayss08i4qHEV8h8RWh9FAOLS34GBMT0GhUN2C4efbYbNNDe1cZ2dNk">
                         <i style={{ marginRight: '0.5%' }} className="fas fa-download"></i>
                         Get Resume
-                    </a>
+                    </a> */}
 
                 </Container>
                 {click ? <Intro click={click} /> : null}
