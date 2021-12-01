@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
-// import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
@@ -84,7 +83,7 @@ color: ${props => props.click ? props.theme.body : props.theme.text};
 text-decoration: none;
 z-index:1;
 `
-const SKILLS = styled(NavLink)`
+const PROJECTS = styled(NavLink)`
 color: ${props => props.theme.text};
 text-decoration: none;
 z-index:1;
@@ -169,8 +168,6 @@ const Main = () => {
 
 
                     <PowerButton />
-                    {/* <LogoComponent theme={click ? 'dark' : 'light'} /> */}
-                    {/* boxShadow: '2px 2px 7px 14px black', */}
                     <SocialIcons theme={click ? 'dark' : 'light'} />
 
 
@@ -192,31 +189,8 @@ const Main = () => {
                     </a>
 
 
-                    {/* <Contact target="_blank" to={{ pathname: "mailto:mabiamownita@gmail.com" }}>
-                        <motion.h2
-                            style={{ color: 'white' }}
-                            initial={{
-                                y: -200,
-                                transition: { type: 'spring', duration: 1.5, delay: 1 }
-                            }}
-                            animate={{
-                                y: 0,
-                                transition: { type: 'spring', duration: 1.5, delay: 1 }
-                            }}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
 
-                        >
-                            Contact Me..
-                        </motion.h2>
-                    </Contact> */}
-
-
-
-
-
-
-                    {/* <BLOG to="/blog">
+                    <BLOG to="/blog">
                         <motion.h2
                             style={{ color: 'white' }}
                             initial={{
@@ -232,11 +206,11 @@ const Main = () => {
                         >
                             Blog
                         </motion.h2>
-                    </BLOG> */}
+                    </BLOG>
 
 
 
-                    <WORK to="/work" click={+click}>
+                    {/* <WORK to="/work" click={+click}>
                         <motion.h2
                             style={{ color: 'white' }}
                             initial={{
@@ -250,9 +224,9 @@ const Main = () => {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                         >
-
+                            Work
                         </motion.h2>
-                    </WORK>
+                    </WORK> */}
 
 
 
@@ -295,7 +269,7 @@ const Main = () => {
                                 About.
                             </motion.h2>
                         </ABOUT>
-                        <SKILLS to="/skills">
+                        <PROJECTS to="/projects">
                             <motion.h2
                                 style={{ color: 'white' }}
                                 initial={{
@@ -309,9 +283,9 @@ const Main = () => {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                My Skills.
+                                Projects.
                             </motion.h2>
-                        </SKILLS>
+                        </PROJECTS>
 
                     </BottomBar>
 

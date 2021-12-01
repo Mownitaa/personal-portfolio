@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import styled, { ThemeProvider } from 'styled-components'
 import PowerButton from '../subComponents/PowerButton';
 import { lightTheme } from './Themes';
@@ -92,7 +93,7 @@ ul,p{
 }
 `
 
-const MySkillsPage = () => {
+const Projects = () => {
     return (
         <ThemeProvider theme={lightTheme}>
 
@@ -103,7 +104,10 @@ const MySkillsPage = () => {
                 <PowerButton />
                 <ParticleComponent theme='light' />
                 <Main>
-                    <Title>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, consequatur?</p>
+
+
+                    {/* <Title>
                         <Design width={40} height={40} /> Designer
                     </Title>
                     <Description>
@@ -126,11 +130,14 @@ const MySkillsPage = () => {
                             </li>
 
                         </ul>
-                    </Description>
+                    </Description> */}
 
                 </Main>
                 <Main>
-                    <Title>
+
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, consequatur?</p>
+                    {/* <Title>
                         <Develope width={40} height={40} /> MERN Stack Developer
                     </Title>
                     <Description>
@@ -147,7 +154,7 @@ const MySkillsPage = () => {
                         <p>
                             VScode, Github, Codepen etc.
                         </p>
-                    </Description>
+                    </Description> */}
 
                 </Main>
 
@@ -160,4 +167,4 @@ const MySkillsPage = () => {
     )
 }
 
-export default MySkillsPage
+export default Projects

@@ -13,6 +13,11 @@ import MySkillsPage from './components/MySkillsPage';
 import { AnimatePresence } from "framer-motion";
 // import SoundBar from "./subComponents/SoundBar";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+import HomePortfolios from "./components/HomePortfolios";
+import SingleProjectsDetails from "./components/SingleProjectsDetails";
+import Project1 from "./components/Project1";
+import Project2 from "./components/Project2";
 
 
 function App() {
@@ -37,7 +42,11 @@ function App() {
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/blog" component={BlogPage} />
           {/* <Route exact path="/work" component={WorkPage} /> */}
-          <Route exact path="/skills" component={MySkillsPage} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/homePortfolios" component={HomePortfolios} />
+          <Route exact path="/projects/1" component={Project1} />
+          <Route exact path="/projects/2" component={Project2} />
+          <Route exact path="/homePortfolios/:projectId" component={SingleProjectsDetails} />
           <Route exact path="/footer" component={Footer} />
 
         </Switch>

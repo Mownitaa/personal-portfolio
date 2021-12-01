@@ -23,6 +23,7 @@ const float = keyframes`
 `
 const Spaceman = styled.div`
 position: absolute;
+filter: grayscale(75%);
 top: 10%;
 right: 5%;
 width: 20vw;
@@ -61,26 +62,24 @@ const AboutPage = () => {
         <ThemeProvider theme={DarkTheme}>
             <Box>
 
-
-                <h1 style={{ color: 'white' }}>This is About Section</h1>
-                <PowerButton></PowerButton>
-                {/* <SocialIcons theme='light' />
+                <SocialIcons theme='light' />
                 <PowerButton />
                 <ParticleComponent theme='dark' />
 
                 <Spaceman>
                     <img src={astronaut} alt="spaceman" />
                 </Spaceman>
-                <Main>
-                    I'm a front-end developer located in Bangladesh. I love to create simple yet beautiful websites with great user experience.
+                <Main style={{ padding: 10 }}>
+                    I'm a full stack developer located in Bangladesh. I
+
                     <br /> <br />
-                    I'm interested in full stack development and trying new things and building great projects.
+                    I'm interested in trying new things and building great projects.
                     <br /> <br />
                     I believe everything is an Art when you put your consciousness in it.
                 </Main>
 
                 <BigTitle text="ABOUT" top="10%" left="5%" />
- */}
+
 
             </Box>
 
