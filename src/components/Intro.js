@@ -77,8 +77,6 @@ const Intro = () => {
         <>
             <Box
 
-
-
                 // style={{ backgroundColor: 'black' }}
                 initial={{ height: 0 }}
                 animate={{ height: '55vh' }}
@@ -87,10 +85,10 @@ const Intro = () => {
 
                 <SubBox>
                     <Text>
-                        <h6>Hi,</h6>
+                        <h5>Hi,</h5>
                         <h4>I'm Mabia Zaman Mownita.</h4>
                         <h6>Junior MERN Stack Developer</h6>
-                        <button style={{ color: 'black' }}>Download Resume <i style={{ marginLeft: '0.5%' }} className="fas fa-download"></i></button>
+                        <button style={{ color: 'black', width: '80%' }}>Hire Me <i style={{ marginLeft: '0.5%' }} className="far fa-user"></i></button>
                     </Text>
                 </SubBox>
                 <SubBox>

@@ -155,8 +155,8 @@ const Main = () => {
 
                 style={{
                     backgroundImage:
-                        `url(${bg})`, backgroundRepeat: 'no-repeat', backgroundSize: '90%', paddingBottom: '28px',
-                    paddingBottom: '10%',
+                        `url(${bg})`, backgroundRepeat: 'no-repeat', backgroundSize: '90%',
+                    paddingBottom: '28px',
                     backgroundColor: 'rgba(40, 38, 65, 0.9)',
 
                     backgroundBlendMode: 'darken,luminosity',
@@ -184,7 +184,7 @@ const Main = () => {
 
                     <a
 
-                        style={{ marginTop: '2%', textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double', display: 'flex', justifyContent: 'right', alignItems: 'center' }}
+                        style={{ marginTop: '3%', textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double', display: 'flex', justifyContent: 'right', alignItems: 'center' }}
 
                         target="blank" href="https://drive.google.com/file/d/1Vgik3yvYb6dbEhLYIxDl8AU2YxGzm6X3/view?fbclid=IwAR0uTayss08i4qHEV8h8RWh9FAOLS34GBMT0GhUN2C4efbYbNNDe1cZ2dNk">
                         <i style={{ marginRight: '0.5%' }} className="fas fa-download"></i>
@@ -315,14 +315,7 @@ const Main = () => {
 
                     </BottomBar>
 
-                    {/* <a
 
-                        style={{ textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double' }}
-
-                        target="blank" href="https://drive.google.com/file/d/1Vgik3yvYb6dbEhLYIxDl8AU2YxGzm6X3/view?fbclid=IwAR0uTayss08i4qHEV8h8RWh9FAOLS34GBMT0GhUN2C4efbYbNNDe1cZ2dNk">
-                        <i style={{ marginRight: '0.5%' }} className="fas fa-download"></i>
-                        Get Resume
-                    </a> */}
 
                 </Container>
                 {click ? <Intro click={click} /> : null}

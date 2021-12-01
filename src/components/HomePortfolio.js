@@ -12,13 +12,13 @@ const HomePortfolio = () => {
             <p className="animate__animated animate__pulse animate__infinite infinite	" style={{ fontWeight: 600, fontSize: '50px', marginTop: '70px', marginBottom: '2%', textAlign: 'center' }}>Portfolio <span style={{ fontSize: '20px' }}>[sneak peek]</span></p>
 
 
-            <div style={{ width: '70%', paddingBottom: 30 }} className="row row-cols-1 row-cols-md-3 g-5 mx-auto">
+            <div style={{ width: '70%', paddingBottom: 30 }} className="row row-cols-1 row-cols-md-3 g-4 mx-auto">
                 <div class="col">
                     <div class="card shadow bg-dark text-white h-100 card_div">
                         <img src={img1} class="card-img-top p-4" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Appointment Booking</h5>
-                            <p class="card-text">Used material UI date picker for taking appointment and created booking modal for getting data from user</p>
+                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} class="card-title">Appointment Booking</h5>
+                            <p class="card-text">Used material UI date picker for taking appointment and a booking modal for getting data from user.</p>
                         </div>
                     </div>
                 </div>
@@ -26,8 +26,8 @@ const HomePortfolio = () => {
                     <div class="card bg-dark text-white h-100 card_div">
                         <img src={img2} class="card-img-top p-4" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Login Page</h5>
-                            <p class="card-text">Implemented email/password and google authentication system for login and registration for private routes</p>
+                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} class="card-title">Login Page</h5>
+                            <p class="card-text">Implemented email/password and google authentication system for login in private routes.</p>
                         </div>
                     </div>
                 </div>
@@ -35,8 +35,8 @@ const HomePortfolio = () => {
                     <div class="card bg-dark text-white h-100 card_div">
                         <img src={img3} class="card-img-top p-4" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Appointment Banner</h5>
-                            <p class="card-text">A part of React js project describing their facilities to make people interested</p>
+                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} class="card-title">Appointment Banner</h5>
+                            <p class="card-text">A part of React js project describing their facilities to make people know about their services.</p>
                         </div>
                     </div>
                 </div>
