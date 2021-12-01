@@ -42,6 +42,12 @@ const Project1 = () => {
             </div>
 
 
+            <div style={{ marginTop: '1%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '50px' }}>
+                <a target="blank" href="https://github.com/Mownitaa/salon-divine-client"><i style={{ marginRight: 15 }} class="fab fa-github"></i></a>
+                <a target="blank" href="https://salon-divine.web.app/"><i class="fas fa-eye"></i></a>
+            </div>
+
+
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '4%' }}>
 
                 <h3>
@@ -60,6 +66,10 @@ const Project1 = () => {
                         </li>
                     </ul>
                 </h3>
+
+
+
+
 
             </div>
 

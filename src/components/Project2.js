@@ -39,6 +39,10 @@ const Project2 = () => {
                 </div> */}
 
             </div>
+            <div style={{ marginTop: '1%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '50px' }}>
+                <a target="blank" href="https://github.com/Mownitaa/express-exit-client-site"><i style={{ marginRight: 15 }} class="fab fa-github"></i></a>
+                <a target="blank" href="https://express-exit.web.app/"><i class="fas fa-eye"></i></a>
+            </div>
 
 
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '4%' }}>
