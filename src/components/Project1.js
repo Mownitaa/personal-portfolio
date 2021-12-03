@@ -7,7 +7,7 @@ import PowerButton from '../subComponents/PowerButton';
 
 import Stack from '@mui/material/Stack';
 import SnackbarContent from '@mui/material/SnackbarContent';
-import ParticleComponent from '../subComponents/ParticleComponent';
+// import ParticleComponent from '../subComponents/ParticleComponent';
 
 
 const Project1 = () => {
@@ -18,7 +18,7 @@ const Project1 = () => {
     return (
         <>
             <PowerButton />
-            <ParticleComponent theme='light' />
+            {/* <ParticleComponent theme='light' /> */}
 
 
             <p className="animate__animated animate__pulse animate__infinite infinite	" style={{ fontWeight: 600, fontSize: '50px', marginTop: '70px', marginBottom: '2%', textAlign: 'center' }}>Salon-Divine</p>

@@ -3,11 +3,12 @@ import img1 from './express-exit-services.PNG'
 import img2 from './express-exit.PNG'
 import img3 from './express-exit-add-service.PNG'
 import PowerButton from '../subComponents/PowerButton';
+// import { Link } from 'react-router-dom';
 
 
 import Stack from '@mui/material/Stack';
 import SnackbarContent from '@mui/material/SnackbarContent';
-import ParticleComponent from '../subComponents/ParticleComponent';
+// import ParticleComponent from '../subComponents/ParticleComponent';
 
 import Carousel from 'react-bootstrap/Carousel'
 
@@ -20,7 +21,7 @@ const Project2 = () => {
         <div style={{ paddingBottom: 50 }}>
 
             <PowerButton />
-            <ParticleComponent theme='light' />
+            {/* <ParticleComponent theme='light' /> */}
 
 
             <p className="animate__animated animate__pulse animate__infinite infinite	" style={{ fontWeight: 600, fontSize: '50px', marginTop: '70px', marginBottom: '2%', textAlign: 'center' }}>Express-Exit</p>
@@ -29,11 +30,14 @@ const Project2 = () => {
 
 
             <div style={{ marginTop: '1%', marginBottom: '2.5%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '18px' }}>
+
                 <a target="blank" href="https://github.com/Mownitaa/express-exit-client-site">
                     <button
                         style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i> Client-Site</button>
+                    >
+                        <i style={{ marginRight: 5 }} class="fab fa-github"></i> Client-Site</button>
                 </a>
+
                 <a target="blank" href="https://github.com/Mownitaa/express-exit-server-site">
                     <button
                         style={{ padding: 3, borderRadius: 8, margin: 2 }}

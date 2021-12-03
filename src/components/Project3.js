@@ -7,7 +7,7 @@ import PowerButton from '../subComponents/PowerButton';
 
 import Stack from '@mui/material/Stack';
 import SnackbarContent from '@mui/material/SnackbarContent';
-import ParticleComponent from '../subComponents/ParticleComponent';
+// import ParticleComponent from '../subComponents/ParticleComponent';
 
 import Carousel from 'react-bootstrap/Carousel'
 
@@ -20,7 +20,7 @@ const Project3 = () => {
         <div style={{ paddingBottom: 50 }}>
 
             <PowerButton />
-            <ParticleComponent theme='light' />
+            {/* <ParticleComponent theme='light' /> */}
 
 
             <p className="animate__animated animate__pulse animate__infinite infinite	" style={{ fontWeight: 600, fontSize: '50px', marginTop: '70px', marginBottom: '2%', textAlign: 'center' }}>Foreign Language School</p>
@@ -32,7 +32,7 @@ const Project3 = () => {
                 <a target="blank" href="https://github.com/Mownitaa/foreign-language-school">
                     <button
                         style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i> Client-Site</button>
+                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i> Code Link</button>
                 </a>
 
                 <a target="blank" href="https://foreign-language-school-d029bd.netlify.app/">
