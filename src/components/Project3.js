@@ -13,11 +13,16 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const Project3 = () => {
 
+    const bg = "https://www.pngmagic.com/product_images/pure-white-background-images.jpg"
 
     return (
 
 
-        <div style={{ paddingBottom: 50 }}>
+        <div style={{
+            paddingBottom: 50,
+            backgroundImage:
+                `url(${bg})`, backgroundRepeat: 'repeat-x', backgroundSize: '30%'
+        }}>
 
             <PowerButton />
             {/* <ParticleComponent theme='light' /> */}
@@ -32,7 +37,7 @@ const Project3 = () => {
                 <a target="blank" href="https://github.com/Mownitaa/foreign-language-school">
                     <button
                         style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i> Code Link</button>
+                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i>Code Link</button>
                 </a>
 
                 <a target="blank" href="https://foreign-language-school-d029bd.netlify.app/">
@@ -70,7 +75,7 @@ const Project3 = () => {
 
 
 
-            <div className="card_div mx-auto py-5 bg-dark" style={{ width: '70%' }}>
+            <div className=" mx-auto py-5 bg-dark" style={{ width: '70%' }}>
                 <Carousel fade>
                     <Carousel.Item>
                         <img

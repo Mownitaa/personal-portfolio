@@ -13,12 +13,19 @@ import SnackbarContent from '@mui/material/SnackbarContent';
 import Carousel from 'react-bootstrap/Carousel'
 
 const Project2 = () => {
-
+    const bg = "https://www.pngmagic.com/product_images/pure-white-background-images.jpg"
+    // const bg = "https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?size=626&ext=jpg"
+    // const bg = "https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg"
 
     return (
 
 
-        <div style={{ paddingBottom: 50 }}>
+        <div style={{
+            paddingBottom: 50,
+            backgroundImage:
+                `url(${bg})`, backgroundRepeat: 'repeat-x', backgroundSize: '30%'
+
+        }} >
 
             <PowerButton />
             {/* <ParticleComponent theme='light' /> */}
@@ -35,13 +42,13 @@ const Project2 = () => {
                     <button
                         style={{ padding: 3, borderRadius: 8, margin: 2 }}
                     >
-                        <i style={{ marginRight: 5 }} class="fab fa-github"></i> Client-Site</button>
+                        <i style={{ marginRight: 5 }} class="fab fa-github"></i>Client-Site</button>
                 </a>
 
                 <a target="blank" href="https://github.com/Mownitaa/express-exit-server-site">
                     <button
                         style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i> Server-Site</button>
+                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i>Server-Site</button>
                 </a>
                 <a target="blank" href="https://express-exit.web.app/">
                     <button
@@ -78,7 +85,7 @@ const Project2 = () => {
 
 
 
-            <div className="card_div mx-auto py-5 bg-dark" style={{ width: '70%' }}>
+            <div className="mx-auto py-5 bg-dark" style={{ width: '80%' }}>
                 <Carousel fade>
                     <Carousel.Item>
                         <img

@@ -12,11 +12,14 @@ import SnackbarContent from '@mui/material/SnackbarContent';
 
 const Project1 = () => {
 
-
+    const bg = "https://www.pngmagic.com/product_images/pure-white-background-images.jpg"
 
 
     return (
-        <>
+        <div style={{
+            backgroundImage:
+                `url(${bg})`, backgroundRepeat: 'repeat-x', backgroundSize: '30%'
+        }}>
             <PowerButton />
             {/* <ParticleComponent theme='light' /> */}
 
@@ -28,12 +31,12 @@ const Project1 = () => {
                 <a target="blank" href="https://github.com/Mownitaa/salon-divine-client">
                     <button
                         style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i> Client-Site</button>
+                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i>Client-Site</button>
                 </a>
                 <a target="blank" href="https://github.com/Mownitaa/salon-divine-server">
                     <button
                         style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i> Server-Site</button>
+                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i>Server-Site</button>
                 </a>
                 <a target="blank" href="https://salon-divine.web.app/">
                     <button
@@ -102,7 +105,7 @@ const Project1 = () => {
                 </div>
 
             </div>
-        </>
+        </div>
     );
 };
 
