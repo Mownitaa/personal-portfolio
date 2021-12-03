@@ -15,7 +15,7 @@ import BigTitle from '../subComponents/BigTitlte'
 
 
 import img1 from './appointment-modal.PNG'
-import img2 from './salon-loginPNG.PNG'
+import img2 from './salon-login.PNG'
 import img3 from './appointment.PNG'
 
 
