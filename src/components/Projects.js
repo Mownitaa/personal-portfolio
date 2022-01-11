@@ -1,170 +1,196 @@
 import React from 'react';
-
-import styled, { ThemeProvider } from 'styled-components'
+import HomePortfolio from './HomePortfolio';
 import PowerButton from '../subComponents/PowerButton';
-import { lightTheme } from './Themes';
-import { Design, Develope } from './AllSvgs';
-
-
-import SocialIcons from '../subComponents/SocialIcons';
-import ParticleComponent from '../subComponents/ParticleComponent';
-import BigTitle from '../subComponents/BigTitlte'
-
-
-
-
-
-import img1 from './appointment-modal.PNG'
-import img2 from './salon-login.PNG'
-import img3 from './appointment.PNG'
-
-
-
-
-const Box = styled.div`
-background-color: ${props => props.theme.body};
-width: 100vw;
-height:100vh;
-position: relative;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-
-
-`
-
-const Main = styled.div`
-border: 2px solid ${props => props.theme.text};
-color: ${props => props.theme.text};
-background-color: ${props => props.theme.body};
-padding: 2rem;
-width: 30vw;
-height: 60vh;
-z-index:3;
-line-height: 1.5;
-cursor: pointer;
-
-font-family: 'Ubuntu Mono',monospace;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-
-&:hover{
-    color: ${props => props.theme.body};
-    background-color: ${props => props.theme.text};
-}
-`
-
-const Title = styled.h2`
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: calc(1em + 1vw);
-
-${Main}:hover &{
-    &>*{
-        fill:${props => props.theme.body};
-    }
-}
-
-&>*:first-child{
-margin-right: 1rem;
-}
-`
-
-const Description = styled.div`
-color: ${props => props.theme.text};
-font-size: calc(0.6em + 1vw);
-padding: 0.5rem 0;
-
-
-${Main}:hover &{
-
-        color:${props => props.theme.body};
-
-}
-
-strong{
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-ul,p{
-    margin-left: 2rem;
-}
-`
 
 const Projects = () => {
     return (
-        <ThemeProvider theme={lightTheme}>
+        <div className='mt-5 pt-4'>
+            <HomePortfolio></HomePortfolio>
+            <PowerButton />
 
-            <ParticleComponent theme='light' />
+        </div>
+    );
+};
 
-            <Box>
-                <SocialIcons theme='light' />
-                <PowerButton />
-                <ParticleComponent theme='light' />
-                <Main>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, consequatur?</p>
-
-
-                    {/* <Title>
-                        <Design width={40} height={40} /> Designer
-                    </Title>
-                    <Description>
-                        I love to create design which speaks, Keep it clean, minimal and simple.
-                    </Description>
-                    <Description>
-                        <strong>I like to Design</strong>
-                        <ul>
-                            <li>
-                                Web Design
-                            </li>
-
-                        </ul>
-                    </Description>
-                    <Description>
-                        <strong>Tools</strong>
-                        <ul>
-                            <li>
-                                Figma
-                            </li>
-
-                        </ul>
-                    </Description> */}
-
-                </Main>
-                <Main>
+export default Projects;
 
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, consequatur?</p>
-                    {/* <Title>
-                        <Develope width={40} height={40} /> MERN Stack Developer
-                    </Title>
-                    <Description>
 
-                    </Description>
-                    <Description>
-                        <strong>Skills</strong>
-                        <p>
-                            Js, React, Redux, MUI, Bootstrap, Tailwind, Firebase,Node js,Express,Mongodb,ES6.
-                        </p>
-                    </Description>
-                    <Description>
-                        <strong>Tools</strong>
-                        <p>
-                            VScode, Github, Codepen etc.
-                        </p>
-                    </Description> */}
+// import React from 'react';
 
-                </Main>
+// import styled, { ThemeProvider } from 'styled-components'
+// import PowerButton from '../subComponents/PowerButton';
+// import { lightTheme } from './Themes';
+// import { Design, Develope } from './AllSvgs';
 
-                <BigTitle text="SKILLS" top="80%" right="30%" />
 
-            </Box>
+// import SocialIcons from '../subComponents/SocialIcons';
+// import ParticleComponent from '../subComponents/ParticleComponent';
+// import BigTitle from '../subComponents/BigTitlte'
 
-        </ThemeProvider>
 
-    )
-}
 
-export default Projects
+
+
+// import img1 from './appointment-modal.PNG'
+// import img2 from './salon-login.PNG'
+// import img3 from './appointment.PNG'
+// import HomePortfolio from './HomePortfolio';
+
+
+
+
+// const Box = styled.div`
+// background-color: ${props => props.theme.body};
+// width: 100vw;
+// height:100vh;
+// position: relative;
+// display: flex;
+// justify-content: space-evenly;
+// align-items: center;
+
+
+// `
+
+// const Main = styled.div`
+// border: 2px solid ${props => props.theme.text};
+// color: ${props => props.theme.text};
+// background-color: ${props => props.theme.body};
+// padding: 2rem;
+// width: 30vw;
+// height: 60vh;
+// z-index:3;
+// line-height: 1.5;
+// cursor: pointer;
+
+// font-family: 'Ubuntu Mono',monospace;
+// display: flex;
+// flex-direction: column;
+// justify-content: space-between;
+
+// &:hover{
+//     color: ${props => props.theme.body};
+//     background-color: ${props => props.theme.text};
+// }
+// `
+
+// const Title = styled.h2`
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// font-size: calc(1em + 1vw);
+
+// ${Main}:hover &{
+//     &>*{
+//         fill:${props => props.theme.body};
+//     }
+// }
+
+// &>*:first-child{
+// margin-right: 1rem;
+// }
+// `
+
+// const Description = styled.div`
+// color: ${props => props.theme.text};
+// font-size: calc(0.6em + 1vw);
+// padding: 0.5rem 0;
+
+
+// ${Main}:hover &{
+
+//         color:${props => props.theme.body};
+
+// }
+
+// strong{
+//     margin-bottom: 1rem;
+//     text-transform: uppercase;
+// }
+// ul,p{
+//     margin-left: 2rem;
+// }
+// `
+
+// const Projects = () => {
+//     return (
+//         <>
+//             <HomePortfolio></HomePortfolio>
+
+//             <ThemeProvider theme={lightTheme}>
+
+//                 <ParticleComponent theme='light' />
+
+//                 <Box>
+//                     <SocialIcons theme='light' />
+//                     <PowerButton />
+//                     <ParticleComponent theme='light' />
+
+//                     {/* <Main> */}
+
+//                     {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, consequatur?</p> */}
+
+
+//                     {/* <Title>
+//                         <Design width={40} height={40} /> Designer
+//                     </Title>
+//                     <Description>
+//                         I love to create design which speaks, Keep it clean, minimal and simple.
+//                     </Description>
+//                     <Description>
+//                         <strong>I like to Design</strong>
+//                         <ul>
+//                             <li>
+//                                 Web Design
+//                             </li>
+
+//                         </ul>
+//                     </Description>
+//                     <Description>
+//                         <strong>Tools</strong>
+//                         <ul>
+//                             <li>
+//                                 Figma
+//                             </li>
+
+//                         </ul>
+//                     </Description> */}
+
+//                     {/* </Main> */}
+
+
+//                     {/* <Main> */}
+
+
+//                     {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, consequatur?</p> */}
+//                     {/* <Title>
+//                         <Develope width={40} height={40} /> MERN Stack Developer
+//                     </Title>
+//                     <Description>
+
+//                     </Description>
+//                     <Description>
+//                         <strong>Skills</strong>
+//                         <p>
+//                             Js, React, Redux, MUI, Bootstrap, Tailwind, Firebase,Node js,Express,Mongodb,ES6.
+//                         </p>
+//                     </Description>
+//                     <Description>
+//                         <strong>Tools</strong>
+//                         <p>
+//                             VScode, Github, Codepen etc.
+//                         </p>
+//                     </Description> */}
+
+//                     {/* </Main> */}
+
+//                     <BigTitle text="SKILLS" top="80%" right="30%" />
+
+//                 </Box>
+
+//             </ThemeProvider>
+//         </>
+//     )
+// }
+
+// export default Projects

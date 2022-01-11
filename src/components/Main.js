@@ -158,7 +158,7 @@ const Main = () => {
                     paddingBottom: '28px',
                     backgroundColor: 'rgba(40, 38, 65, 0.9)',
 
-                    backgroundBlendMode: 'darken,luminosity',
+                    backgroundBlendMode: 'darken,luminosity'
                 }}
             >
 
@@ -294,8 +294,8 @@ const Main = () => {
                 </Container>
                 {click ? <Intro click={click} /> : null}
             </MainContainer >
-            <HomePortfolio></HomePortfolio>
-            <Footer></Footer>
+            {/* <HomePortfolio></HomePortfolio> */}
+            {/* <Footer></Footer> */}
         </>
     )
 }
