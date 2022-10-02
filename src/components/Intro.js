@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 // import Me from '../assets/Images/profile-img.png'
-import me from './ME.png'
+import me from './meIubat.png'
 
 const Box = styled(motion.div)`
 

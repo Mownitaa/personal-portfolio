@@ -74,7 +74,7 @@ const BlogPage = () => {
                 opacity: 0, transition: { duration: 0.5 }
             }}
         >
-            <Container>
+            {/* <Container>
                 <PowerButton />
                 <SocialIcons />
                 <AnchorComponent number={numbers} />
@@ -92,7 +92,7 @@ const BlogPage = () => {
 
                 </Center>
                 <BigTitle text="BLOG" top="5rem" left="5rem" />
-            </Container>
+            </Container> */}
         </MainContainer>
     )
 }

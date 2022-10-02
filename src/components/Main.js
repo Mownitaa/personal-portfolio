@@ -181,9 +181,9 @@ const Main = () => {
 
                     <a
 
-                        style={{ marginTop: '3%', textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double', display: 'flex', justifyContent: 'right', alignItems: 'center' }}
+                        style={{ marginRight:60,marginTop: '3%', textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double', display: 'flex', justifyContent: 'right', alignItems: 'center' }}
 
-                        target="blank" href="https://drive.google.com/file/d/1Vgik3yvYb6dbEhLYIxDl8AU2YxGzm6X3/view?fbclid=IwAR0uTayss08i4qHEV8h8RWh9FAOLS34GBMT0GhUN2C4efbYbNNDe1cZ2dNk">
+                        target="blank" href="https://drive.google.com/file/d/12basgRKJp-1mGlhrRRho4hIq7wsr8_nH/view?usp=sharing">
                         <i style={{ marginRight: '0.5%' }} className="fas fa-download"></i>
                         Get Resume
                     </a>
@@ -232,7 +232,7 @@ const Main = () => {
 
                     <Contact target="_blank" to={{ pathname: "mailto:mabiamownita@gmail.com" }}>
                         <motion.h2
-                            style={{ color: 'white' }}
+                            style={{ color: 'white',marginLeft:80 }}
                             initial={{
                                 y: -200,
                                 transition: { type: 'spring', duration: 1.5, delay: 1 }
