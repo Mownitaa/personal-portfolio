@@ -37,10 +37,28 @@ const SocialIcons = (props) => {
                 animate={{ scale: [0, 1, 1.5, 1] }}
                 transition={{ type: 'spring', duration: 1, delay: 1 }}
             >
-                <NavLink style={{ color: 'inherit' }} target="_blank" to={{ pathname: "https://github.com/mownitaa" }}>
+                <NavLink style={{ color: 'white' }} target="_blank" to={{ pathname: "https://github.com/mownitaa" }}>
                     <Github width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
                 </NavLink>
             </motion.div>
+
+
+
+            <motion.div
+                initial={{ transform: "scale(0)" }}
+                animate={{ scale: [0, 1, 1.5, 1] }}
+                transition={{ type: 'spring', duration: 1, delay: 1.6 }}
+            >
+                <NavLink style={{ color: 'black' }} target="_blank" to={{ pathname: "https://www.linkedin.com/in/mabia-zaman-mownita/" }}>
+
+                    <i
+                        style={{color:'white', fontSize: '25px' }}
+                        width={75} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} className="fab fa-linkedin"></i>
+                </NavLink>
+            </motion.div>
+
+
+            
             {/* <motion.div
                 initial={{ transform: "scale(0)" }}
                 animate={{ scale: [0, 1, 1.5, 1] }}
@@ -55,22 +73,13 @@ const SocialIcons = (props) => {
                 animate={{ scale: [0, 1, 1.5, 1] }}
                 transition={{ type: 'spring', duration: 1, delay: 1.4 }}
             >
-                <NavLink style={{ color: 'inherit' }} target="_blank" to={{ pathname: "https://www.facebook.com/mownita3344" }}>
+                <NavLink style={{ color: 'white' }} target="_blank" to={{ pathname: "https://www.facebook.com/mownita3344" }}>
                     <Facebook width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
                 </NavLink>
             </motion.div>
-            <motion.div
-                initial={{ transform: "scale(0)" }}
-                animate={{ scale: [0, 1, 1.5, 1] }}
-                transition={{ type: 'spring', duration: 1, delay: 1.6 }}
-            >
-                <NavLink style={{ color: 'black' }} target="_blank" to={{ pathname: "https://www.linkedin.com/in/mabia-zaman-mownita/" }}>
 
-                    <i
-                        style={{ fontSize: '25px' }}
-                        width={75} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} className="fab fa-linkedin"></i>
-                </NavLink>
-            </motion.div>
+
+      
 
             {/* <YouTube width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} /> */}
 

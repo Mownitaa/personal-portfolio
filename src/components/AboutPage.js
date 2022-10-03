@@ -70,7 +70,7 @@ const AboutPage = () => {
                     <img src={astronaut} alt="spaceman" />
                 </Spaceman>
                 <Main style={{ padding: 10 }}>
-                    I'm a full stack developer located in Bangladesh. I
+                    I'm a full stack (MERN) developer located in Bangladesh.
 
                     <br /> <br />
                     I'm interested in trying new things and building great projects.

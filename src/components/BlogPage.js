@@ -74,6 +74,19 @@ const BlogPage = () => {
                 opacity: 0, transition: { duration: 0.5 }
             }}
         >
+  <PowerButton/>
+            <Container
+            style={{
+                marginTop:100,
+                fontSize:200,
+                display:'flex',
+                justifyContent:'center',
+                alignItems:'center'
+            }}
+            >
+              
+                Blogs
+            </Container>
             {/* <Container>
                 <PowerButton />
                 <SocialIcons />
