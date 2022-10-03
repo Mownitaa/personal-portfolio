@@ -62,7 +62,7 @@ const AboutPage = () => {
         <ThemeProvider theme={DarkTheme}>
             <Box>
 
-                <SocialIcons theme='light' />
+                {/* <SocialIcons theme='light' /> */}
                 <PowerButton />
                 <ParticleComponent theme='dark' />
 
@@ -73,7 +73,7 @@ const AboutPage = () => {
                     I'm a full stack (MERN) developer located in Bangladesh.
 
                     <br /> <br />
-                    I'm interested in trying new things and building great projects.
+                    I'm interested in trying new things and building great projects.According to that continuty, recently I've started having skills os ASP.NET in my internship and practicing MERN alongside.
                     <br /> <br />
                     I believe everything is an Art when you put your consciousness in it.
                 </Main>
