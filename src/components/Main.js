@@ -232,7 +232,7 @@ const Main = () => {
 
                     <Contact target="_blank" to={{ pathname: "mailto:mabiamownita@gmail.com" }}>
                         <motion.h2
-                            style={{ color: 'white',marginLeft:80 }}
+                            style={{ color: 'white',marginLeft:150 }}
                             initial={{
                                 y: -200,
                                 transition: { type: 'spring', duration: 1.5, delay: 1 }
