@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import me from './meIubat.png'
+import me from './formalM.png'
 
 const Box = styled(motion.div)`
 
@@ -75,8 +75,6 @@ const Intro = () => {
 
         <>
             <Box
-
-                // style={{ backgroundColor: 'black' }}
                 initial={{ height: 0 }}
                 animate={{ height: '55vh' }}
                 transition={{ type: 'spring', duration: 2, delay: 1 }}
@@ -86,12 +84,7 @@ const Intro = () => {
                     <Text>
                         <h5>Hi,</h5>
                         <h4>I'm Mabia Zaman Mownita.</h4>
-                        <h6>Junior MERN Stack Developer</h6>
-                        
-                        <button  style={{ color: 'black', width: '80%' }}>
-                            <a style={{textDecoration:'none', color:'black'}} target="_blank" href="mailto:mabiamownita@gmail.com">Hire Me <i style={{ marginLeft: '0.5%' }} className="far fa-user"></i>
-                            </a>
-                            </button>
+                        <h5>Junior Full Stack Developer</h5>
                     </Text>
                 </SubBox>
                 <SubBox>

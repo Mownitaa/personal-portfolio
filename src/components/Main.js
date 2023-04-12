@@ -6,7 +6,8 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
-    ;
+import cv from './Mabia_Zaman_Mownita_CV.pdf'
+
 
 // import img1 from './appointment-modal.PNG'
 // import img2 from './salon-loginPNG.PNG'
@@ -181,14 +182,15 @@ const Main = () => {
 
                     <a
 
+                        href={cv} download
                         style={{ marginRight:60,marginTop: '3%', textDecoration: 'none', color: 'white', fontSize: '25px', padding: 5, borderRight: 'double', display: 'flex', justifyContent: 'right', alignItems: 'center' }}
-
-                        target="blank" href="https://drive.google.com/file/d/12basgRKJp-1mGlhrRRho4hIq7wsr8_nH/view?usp=sharing">
+                    >
+                        
                         <i style={{ marginRight: '0.5%' }} className="fas fa-download"></i>
-                        Get Resume
+                        Get CV
                     </a>
 
-
+               {/* target="blank" href="https://drive.google.com/file/d/1w5OUhRN9oduTvBExUvL_uetk54n0UAmD/view?usp=sharing" */}
 
                     <BLOG to="/blog">
                         <motion.h2
@@ -245,7 +247,7 @@ const Main = () => {
                             whileTap={{ scale: 0.9 }}
 
                         >
-                            Contact Me..
+                            Contact Me
                         </motion.h2>
                     </Contact>
 
@@ -266,7 +268,7 @@ const Main = () => {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                About.
+                                About
                             </motion.h2>
                         </ABOUT>
                         <PROJECTS to="/projects">
@@ -283,7 +285,7 @@ const Main = () => {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                Projects.
+                                Projects
                             </motion.h2>
                         </PROJECTS>
 
