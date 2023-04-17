@@ -1,12 +1,9 @@
 import React from 'react'
-import styled, { keyframes, ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { DarkTheme } from './Themes';
-
-import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
-import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
-import astronaut from '../assets/Images/spaceman.png'
+import aboutImg from '../assets/Images/portfolioAboutImg.png'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -15,41 +12,32 @@ height:100vh;
 position: relative;
 overflow: hidden;
 `
-const float = keyframes`
-0% { transform: translateY(-10px) }
-50% { transform: translateY(15px) translateX(15px) }
-100% { transform: translateY(-10px) }
 
-`
-const Spaceman = styled.div`
+const AboutImg = styled.div`
 position: absolute;
-filter: grayscale(75%);
-top: 10%;
-right: 5%;
-width: 20vw;
-animation: ${float} 4s ease infinite;
+top: 25%;
+right: 1%;
+width: 40vw;
 img{
     width: 100%;
     height: auto;
 }
 `
 const Main = styled.div`
-  border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
+  margin: 5rem;
   padding: 2rem;
-  width: 50vw;
+  width: 48vw;
   height: 60vh;
   z-index: 3;
   line-height: 1.5;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.6rem + 0.7vw);
  backdrop-filter: blur(4px);
-  
   position: absolute;
-  left: calc(5rem + 5vw);
-  top: 10rem;
+  top: 8rem;
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
 `
@@ -61,26 +49,24 @@ const AboutPage = () => {
     return (
         <ThemeProvider theme={DarkTheme}>
             <Box>
-
-                {/* <SocialIcons theme='light' /> */}
                 <PowerButton />
-                <ParticleComponent theme='dark' />
-
-                <Spaceman>
-                    <img src={astronaut} alt="spaceman" />
-                </Spaceman>
                 <Main style={{ padding: 10 }}>
-                    I'm a full stack (MERN) developer located in Bangladesh.
+                I'm experienced in MERN Stack Development for more than 1 year. I am eager to be challenged in order to grow and further improve my skills. Seeing for an 
+industry in which I can put into practice my knowledge and experience.
 
                     <br /> <br />
-                    I'm interested in trying new things and building great projects.According to that continuty, recently I've started having skills os ASP.NET in my internship and practicing MERN alongside.
+                    ✦Learning and exploring includes:- 
+ React JS, Node JS, Express JS, MongoDB, Javascript, ES6, Firebase, 
+ HTML/HTML5,CSS/CSS3, Bootstrap/Bootstrap5, Tailwind, Material UI, Figma
                     <br /> <br />
-                    I believe everything is an Art when you put your consciousness in it.
+                    ✦Familiar with:- 
+ ASP.NET Core, MVC Model, Razor Page, c#, MySQL 
                 </Main>
+                <AboutImg>
+                    <img src={aboutImg} alt="spaceman" />
+                </AboutImg>
 
                 <BigTitle text="ABOUT" top="10%" left="5%" />
-
-
             </Box>
 
         </ThemeProvider>

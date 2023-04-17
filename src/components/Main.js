@@ -190,8 +190,6 @@ const Main = () => {
                         Get CV
                     </a>
 
-               {/* target="blank" href="https://drive.google.com/file/d/1w5OUhRN9oduTvBExUvL_uetk54n0UAmD/view?usp=sharing" */}
-
                     <BLOG to="/blog">
                         <motion.h2
                             style={{ color: 'white' }}
