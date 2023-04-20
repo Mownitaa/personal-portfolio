@@ -1,169 +1,100 @@
 import React from 'react';
-import img1 from './express-exit-services.PNG'
-import img2 from './express-exit.PNG'
-import img3 from './express-exit-add-service.PNG'
+import styled, { keyframes, ThemeProvider } from 'styled-components'
+import { DarkTheme } from './Themes';
 import PowerButton from '../subComponents/PowerButton';
-// import { Link } from 'react-router-dom';
-
-
+import BigTitle from '../subComponents/BigTitlte'
+import expressExit from '../assets/Images/exprees_exit.png'
 import Stack from '@mui/material/Stack';
 import SnackbarContent from '@mui/material/SnackbarContent';
-// import ParticleComponent from '../subComponents/ParticleComponent';
 
-import Carousel from 'react-bootstrap/Carousel'
+const Box = styled.div`
+background-color: ${props => props.theme.body};
+width: 100vw;
+height:100vh;
+position: relative;
+overflow: hidden;
+`
+const float = keyframes`
+0% { transform: translateY(-10px) }
+50% { transform: translateY(15px) translateX(15px) }
+100% { transform: translateY(-10px) }`
+
+
+const ProjectImg = styled.div`
+filter: grayscale(55%);
+  top: 15rem;
+  width: 48vw;
+  height: 40vh;
+  z-index: 3;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(0.6rem + 1vw);
+ backdrop-filter: blur(9px);
+  position: absolute;
+  left: calc(0.01rem + 5vw);
+
+// animation: ${float} 4s ease infinite;
+img{
+    width: 100%;
+    height: auto;
+}
+`
+
+const Main = styled.div`
+border: 2px solid ${(props) => props.theme.text};
+  color: ${(props) => props.theme.text};
+  position: absolute;
+  padding-y:1rem;
+  padding-left:0.4rem;
+filter: grayscale(55%);
+top: 15rem;
+right: 6%;
+width: 35vw;
+  padding-y:2rem;
+  width: 38vw;
+  height: 40vh;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: left;
+  z-index: 3;
+  line-height: 1.5;
+  font-size: calc(0.6rem + 1vw);
+  font-family: 'Ubuntu Mono', monospace;
+  font-style: italic;
+`
 
 const Project2 = () => {
-    const bg = "https://www.pngmagic.com/product_images/pure-white-background-images.jpg"
-    // const bg = "https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?size=626&ext=jpg"
-    // const bg = "https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg"
 
     return (
-
-
-        <div style={{
-            paddingBottom: 50,
-            backgroundImage:
-                `url(${bg})`, backgroundRepeat: 'repeat-x', backgroundSize: '30%'
-
-        }} >
-
-            <PowerButton />
-            {/* <ParticleComponent theme='light' /> */}
-
-
-            <p className="animate__animated animate__pulse animate__infinite infinite	" style={{ fontWeight: 600, fontSize: '50px', marginTop: '70px', marginBottom: '2%', textAlign: 'center' }}>Express-Exit</p>
-
-
-
-
-            <div style={{ marginTop: '1%', marginBottom: '2.5%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '18px' }}>
-
-                <a target="blank" href="https://github.com/Mownitaa/express-exit-client-site">
-                    <button
-                        style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    >
-                        <i style={{ marginRight: 5 }} class="fab fa-github"></i>Client-Site</button>
-                </a>
-
-                <a target="blank" href="https://github.com/Mownitaa/express-exit-server-site">
-                    <button
-                        style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i>Server-Site</button>
-                </a>
-                <a target="blank" href="https://express-exit.web.app/">
-                    <button
-                        style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    > <i style={{ marginRight: 5 }} class="fas fa-eye"></i>Live-Site</button>
-                </a>
-            </div>
-
-
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '3%' }}>
-                <Stack spacing={2} sx={{ maxWidth: 600 }}>
-                    <SnackbarContent
-                        message="This is a delivery system related website" />
-                    <SnackbarContent
-                        message="Implemented firebase authentication system" />
-                    <SnackbarContent
-                        message={
-                            'Created private route'
-                        }
-                    />
-                    <SnackbarContent
-                        message="Logged in user can avail services"
-
-                    />
-                    <SnackbarContent
-                        message={
-                            'Users can also add or delete any service.'
-                        }
-
-                    />
-                </Stack>
-            </div>
-
-
-
-
-            <div className="mx-auto py-5 bg-dark" style={{ width: '80%' }}>
-                <Carousel fade>
-                    <Carousel.Item>
-                        <img
-                            // style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-                            className="d-block mx-auto w-75"
-                            src={img1}
-                            alt="First slide"
-                        />
-                        {/* <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption> */}
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            // style={{ width: '50%' }}
-                            className="d-block mx-auto w-75"
-                            src={img2}
-                            alt="Second slide"
-                        />
-
-                        {/* <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption> */}
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            // style={{ width: '50%' }}
-                            className="d-block mx-auto w-75"
-                            src={img3}
-                            alt="Third slide"
-                        />
-
-                        {/* <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption> */}
-                    </Carousel.Item>
-                </Carousel>
-            </div>
-
-
-
-
-
-
-
-
-
-            {/* <div style={{ width: '90%', paddingBottom: 30 }} className="row row-cols-1 row-cols-md-3 g-4 mx-auto">
-                <div className="col">
-                    <div className="card shadow bg-dark text-white w-100 h-100 card_div">
-                        <img style={{ height: '300px' }} src={img1} className="card-img-top p-4" alt="..." />
-                        <div className="card-body">
-                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} className="card-title">Appointment Booking Modal</h5>
-                        </div>
-                    </div>
+        <div>
+            <ThemeProvider theme={DarkTheme}>
+            <Box>
+                <PowerButton />
+                <Main>
+                <h1>Express Exit</h1> <span>MERN stack project</span>
+                <div>
+                    <p className='text-secondary fs-5'>‣ Implemented CRUD method and firebase authentication system</p>
                 </div>
-                <div className="col">
-                    <div className="card bg-dark text-white h-100 card_div">
-                        <img src={img2} className="card-img-top p-4 mt-5" alt="..." />
-                        <div className="card-body">
-                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} className="card-title">Login Route</h5>
-                        </div>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="card bg-dark text-white h-auto card_div">
-                        <img src={img3} className="card-img-top p-4" alt="..." />
-                        <div className="card-body">
-                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} className="card-title">Appointment Banner</h5>
+               <div>
+               <a style={{fontSize: 40, marginRight:10, color: 'white' }} target="_blank" href="https://github.com/Mownitaa/express-exit-client-site">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+               <a style={{fontSize: 40, color: 'white'}} target="_blank" href="https://express-exit.web.app/">
+               <ion-icon name="open-outline"></ion-icon>
+                </a>                
+            </div>
+                </Main>
+                <ProjectImg>
+                    <a target="blank" href="https://express-exit.web.app/"><img src={expressExit} alt="appopintlet" /></a>
+                </ProjectImg>
 
-                        </div>
-                    </div>
-                </div>
+                <BigTitle text="PROJECTS" top="10%" bottom="10%" left="5%" />
+            </Box>
 
-            </div> */}
+        </ThemeProvider>
         </div>
     );
 };

@@ -6,22 +6,13 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
-import cv from './Mabia_Zaman_Mownita_CV.pdf'
-
-
-// import img1 from './appointment-modal.PNG'
-// import img2 from './salon-loginPNG.PNG'
-// import img3 from './salon-apponitment.PNG'
+import cv from '../assets/files/Mabia_Zaman_Mownita_CV.pdf'
 
 
 
-import bg from './welcomeBg.jpg'
-
-
-
+import bg from '../assets/Images/welcomeBg.jpg'
 
 import Footer from './Footer'
-import HomePortfolio from './HomePortfolio'
 const MainContainer = styled.div`
 // background: ${props => props.theme.body};
 width: 100vw;
@@ -294,7 +285,6 @@ const Main = () => {
                 </Container>
                 {click ? <Intro click={click} /> : null}
             </MainContainer >
-            {/* <HomePortfolio></HomePortfolio> */}
             {/* <Footer></Footer> */}
         </>
     )

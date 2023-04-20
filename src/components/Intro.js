@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import me from './formalM.png'
+import me from '../assets/Images/formalM.png'
 
 const Box = styled(motion.div)`
 

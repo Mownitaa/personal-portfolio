@@ -1,110 +1,93 @@
 import React from 'react';
-import img1 from './appointment-modal.PNG'
-import img2 from './salon-login.PNG'
-import img3 from './appointment.PNG'
+import styled, { keyframes, ThemeProvider } from 'styled-components'
+import { DarkTheme } from './Themes';
 import PowerButton from '../subComponents/PowerButton';
-
-
+import BigTitle from '../subComponents/BigTitlte'
+import appointlet from '../assets/Images/appointlet.png'
 import Stack from '@mui/material/Stack';
 import SnackbarContent from '@mui/material/SnackbarContent';
-// import ParticleComponent from '../subComponents/ParticleComponent';
+
+const Box = styled.div`
+background-color: ${props => props.theme.body};
+width: 100vw;
+height:120vh;
+position: relative;
+overflow: hidden;
+`
+const float = keyframes`
+0% { transform: translateY(-10px) }
+50% { transform: translateY(15px) translateX(15px) }
+100% { transform: translateY(-10px) }`
 
 
-const Project1 = () => {
+const ProjectImg = styled.div`
+position: absolute;
+filter: grayscale(55%);
+top: 20rem;
+right: 6%;
+width: 48vw;
+height: 40vh;
+display: flex;
+  justify-content: center;
+  align-items: center;
+// animation: ${float} 4s ease infinite;
+img{
+    width: 100%;
+    height: auto;
+}
+`
 
-    const bg = "https://www.pngmagic.com/product_images/pure-white-background-images.jpg"
+const Main = styled.div`
+border: 2px solid ${(props) => props.theme.text};
+  color: ${(props) => props.theme.text};
+  top: 21rem;
+  padding-y:1rem;
+  padding-left:0.4rem;
+  width: 38vw;
+  height: 40vh;
+  display:flex;
+  flex-direction:column;
+  z-index: 3;
+  line-height: 1.5;
+  justify-content: center;
+  align-items: right;
+  font-size: calc(0.6rem + 1vw);
+ backdrop-filter: blur(9px);
+  position: absolute;
+  left: calc(0.01rem + 5vw);
+  font-family: 'Ubuntu Mono', monospace;
+  font-style: italic;
+`
 
+const Project1 = (props) => {
 
     return (
-        <div style={{
-            backgroundImage:
-                `url(${bg})`, backgroundRepeat: 'repeat-x', backgroundSize: '30%'
-        }}>
-            <PowerButton />
-            {/* <ParticleComponent theme='light' /> */}
-
-
-            <p className="animate__animated animate__pulse animate__infinite infinite	" style={{ fontWeight: 600, fontSize: '50px', marginTop: '70px', marginBottom: '2%', textAlign: 'center' }}>Salon-Divine</p>
-
-
-            <div style={{ marginTop: '1%', marginBottom: '2.5%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '18px' }}>
-                <a target="blank" href="https://github.com/Mownitaa/salon-divine-client">
-                    <button
-                        style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i>Client-Site</button>
-                </a>
-                <a target="blank" href="https://github.com/Mownitaa/salon-divine-server">
-                    <button
-                        style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    ><i style={{ marginRight: 5 }} class="fab fa-github"></i>Server-Site</button>
-                </a>
-                <a target="blank" href="https://salon-divine.web.app/">
-                    <button
-                        style={{ padding: 3, borderRadius: 8, margin: 2 }}
-                    > <i style={{ marginRight: 5 }} class="fas fa-eye"></i>Live-Site</button>
-                </a>
-            </div>
-
-
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '3%' }}>
-                <Stack spacing={2} sx={{ maxWidth: 600 }}>
-                    {/* <span style={{ display: 'flex' }}><i class="fas fa-mouse-pointer"></i> */}
-                    <SnackbarContent
-                        message="Salon-divine is a beauty salon related website" />
-                    {/* </span> */}
-                    <SnackbarContent
-                        message="Implemented firebase authentication system" />
-                    <SnackbarContent
-                        message={
-                            'Created private route'
-                        }
-                    />
-                    <SnackbarContent
-                        message="User can book appointment"
-
-                    />
-                    <SnackbarContent
-                        message={
-                            'Users appointment date and time is dynamic.'
-                        }
-
-                    />
-                </Stack>
-            </div>
-
-
-
-
-
-
-            <div style={{ width: '90%', paddingBottom: 30 }} className="row row-cols-1 row-cols-md-3 g-4 mx-auto">
-                <div className="col">
-                    <div className="card shadow bg-dark text-white h-auto card_div">
-                        <img src={img1} className="card-img-top p-4" alt="..." />
-                        <div className="card-body">
-                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} className="card-title">Appointment Booking Modal</h5>
-                        </div>
-                    </div>
+        <div>
+            <ThemeProvider theme={DarkTheme}>
+            <Box>
+                <PowerButton />
+                <Main>
+                <h1>Appointlet</h1> <span>MERN stack project</span>
+                <div>
+                    <p className='text-secondary fs-5'>‣ Implemented appointment booking system by using mui date picker</p>
                 </div>
-                <div className="col">
-                    <div className="card bg-dark text-white h-100 card_div">
-                        <img src={img2} className="card-img-top p-4 mt-5" alt="..." />
-                        <div className="card-body">
-                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} className="card-title">Login Route</h5>
-                        </div>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="card bg-dark text-white h-auto card_div">
-                        <img src={img3} className="card-img-top p-4" alt="..." />
-                        <div className="card-body">
-                            <h5 style={{ color: '#01A7EF', fontWeight: 'bold' }} className="card-title">Appointment Banner</h5>
-
-                        </div>
-                    </div>
-                </div>
-
+               <div>
+               <a style={{fontSize: 40, marginRight:10, color: 'white' }} target="_blank" href="https://github.com/Mownitaa/Appointlet">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+               <a style={{fontSize: 40, color: 'white'}} target="_blank" href="https://appointlet-764cd.web.app/">
+               <ion-icon name="open-outline"></ion-icon>
+                </a>                
             </div>
+                </Main>
+                <ProjectImg>
+                    <a target="blank" href="https://appointlet-764cd.web.app/"><img src={appointlet} alt="appopintlet" /></a>
+                </ProjectImg>
+
+                <BigTitle text="PROJECTS" top="10%" bottom="10%" left="5%" />
+            </Box>
+
+        </ThemeProvider>
         </div>
     );
 };
