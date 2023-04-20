@@ -3,14 +3,14 @@ import styled, { keyframes, ThemeProvider } from 'styled-components'
 import { DarkTheme } from './Themes';
 import PowerButton from '../subComponents/PowerButton';
 import BigTitle from '../subComponents/BigTitlte'
-import expressExit from '../assets/Images/exprees_exit.png'
+import expressExit from '../assets/Images/express_exit.png'
 import Stack from '@mui/material/Stack';
 import SnackbarContent from '@mui/material/SnackbarContent';
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
-height:100vh;
+height:80vh;
 position: relative;
 overflow: hidden;
 `
@@ -21,7 +21,7 @@ const float = keyframes`
 
 
 const ProjectImg = styled.div`
-filter: grayscale(55%);
+// filter: grayscale(55%);
   top: 15rem;
   width: 48vw;
   height: 40vh;
@@ -35,7 +35,7 @@ filter: grayscale(55%);
   position: absolute;
   left: calc(0.01rem + 5vw);
 
-// animation: ${float} 4s ease infinite;
+animation: ${float} 4s ease infinite;
 img{
     width: 100%;
     height: auto;
@@ -43,7 +43,7 @@ img{
 `
 
 const Main = styled.div`
-border: 2px solid ${(props) => props.theme.text};
+// border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   position: absolute;
   padding-y:1rem;
@@ -51,8 +51,7 @@ border: 2px solid ${(props) => props.theme.text};
 filter: grayscale(55%);
 top: 15rem;
 right: 6%;
-width: 35vw;
-  padding-y:2rem;
+width: 38vw;
   width: 38vw;
   height: 40vh;
   display:flex;
@@ -76,7 +75,7 @@ const Project2 = () => {
                 <Main>
                 <h1>Express Exit</h1> <span>MERN stack project</span>
                 <div>
-                    <p className='text-secondary fs-5'>‣ Implemented CRUD method and firebase authentication system</p>
+                    <p className='text-secondary fs-5'>‣ Implemented CRUD operation and login with google sign in method</p>
                 </div>
                <div>
                <a style={{fontSize: 40, marginRight:10, color: 'white' }} target="_blank" href="https://github.com/Mownitaa/express-exit-client-site">

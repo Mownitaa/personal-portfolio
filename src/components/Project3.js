@@ -10,7 +10,7 @@ import SnackbarContent from '@mui/material/SnackbarContent';
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
-height:120vh;
+height:100vh;
 position: relative;
 overflow: hidden;
 `
@@ -22,7 +22,7 @@ const float = keyframes`
 
 const ProjectImg = styled.div`
 position: absolute;
-filter: grayscale(55%);
+// filter: grayscale(55%);
 top: 20rem;
 right: 6%;
 width: 48vw;
@@ -30,7 +30,7 @@ height: 40vh;
 display: flex;
   justify-content: center;
   align-items: center;
-// animation: ${float} 4s ease infinite;
+animation: ${float} 4s ease infinite;
 img{
     width: 100%;
     height: auto;
@@ -38,7 +38,7 @@ img{
 `
 
 const Main = styled.div`
-border: 2px solid ${(props) => props.theme.text};
+// border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   top: 21rem;
   padding-y:1rem;
@@ -69,7 +69,7 @@ const Project3 = (props) => {
                 <Main>
                 <h1>Medicare</h1> <span>React.JS project</span>
                 <div>
-                    <p className='text-secondary fs-5'>‣ Fetched data from API and created private route using firebase authentication</p>
+                    <p className='text-secondary fs-5'>‣ Fetched data from API and created private route using firebase auth</p>
                 </div>
                <div>
                <a style={{fontSize: 40, marginRight:10, color: 'white' }} target="_blank" href="https://github.com/Mownitaa/medicare">
