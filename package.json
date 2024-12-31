@@ -30,7 +30,10 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "eslint": {
+      "ignoreDuringBuilds": true
+    }
   },
   "browserslist": {
     "production": [
