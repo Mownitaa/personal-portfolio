@@ -1,5 +1,4 @@
 import { Routes, Route, Link } from "react-router-dom";
-// import { Switch } from "@mui/material";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./components/Themes";
 import GlobalStyle from "./globalStyles";
